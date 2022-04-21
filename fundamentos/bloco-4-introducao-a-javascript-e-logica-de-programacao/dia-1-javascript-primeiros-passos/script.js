@@ -3,8 +3,8 @@
 const a = 10;
 const b = 5;
 
-console.log ('Soma: ' + (a + b));
-console.log ('Subtração: ' + (a - b));
+console.log('Soma: ' + (a + b));
+console.log('Subtração: ' + (a - b));
 console.log('Multipĺicação: ' + (a * b));
 console.log('Divisão: ' + (a / b));
 console.log('Módulo: ' + (a % b));
@@ -24,9 +24,9 @@ const b = 4;
 const c = 2;
 
 if (a > b && a > c) {
-    console.log('O maior número é: ' + a + ' (a)'); 
+    console.log('O maior número é: ' + a + ' (a)');
 } else if (b > a && b > c) {
-    console.log ('o maior número é ' + b + ' (b)');
+    console.log('o maior número é ' + b + ' (b)');
 } else {
     console.log('O maior número é: ' + c + ' (c)');
 };
@@ -53,7 +53,7 @@ let somaDeTodosOsAngulos = anguloA + anguloB + anguloC;
 
 let todosOsAngulosForemPosivitos = anguloA > 0 && anguloB > 0 && anguloC > 0;
 
-if (todosOsAngulosForemPosivitos){
+if (todosOsAngulosForemPosivitos) {
     if (somaDeTodosOsAngulos === 180) {
         console.log(true);
     } else {
@@ -62,3 +62,43 @@ if (todosOsAngulosForemPosivitos){
 } else {
     console.log('Erro: ângulo inválido');
 };
+
+// Exercício 6 : Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+// Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
+// Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case) .
+// Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
+// Exemplo: bishop (bispo) -> diagonals (diagonais)
+
+const pecaDeXadrez = 'REI';
+
+switch (pecaDeXadrez.toLowerCase()) {
+
+    case 'rei':
+        console.log('Rei = Uma casa apenas para qualquer direção.');
+        break;
+
+    case 'bispo':
+        console.log('Bispo = Diagonal.');
+        break;
+
+    case 'rainha':
+        console.log('Rainha = Diagonal, horizontal e vertical.');
+        break;
+
+    case 'cavalo':
+        console.log('Cavalo = Movimento em "L" e pode pular sobre as peças.');
+        break;
+
+    case 'torre':
+        console.log('Torre = Horizontal e vertical.');
+        break;
+
+    case 'peão':
+        console.log('Peão = Apenas uma casa pra frente, no primeiro movimento podem ser duas casas.');
+        break;
+
+    default:
+        console.log('Erro, peça inválida!');
+        break;
+};
+
