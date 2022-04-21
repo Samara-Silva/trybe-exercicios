@@ -50,13 +50,31 @@
 
 //Exercicio 5: Utilizando for , descubra qual o maior valor contido no array e imprima-o;
 
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+//  let maiorNumero = numbers[0];
+
+//  for (let index = 0; index < numbers.length; index += 1) {
+// if (numbers[index] > maiorNumero) {
+//     maiorNumero = numbers[index];
+// }
+//  };
+
+//  console.log(maiorNumero);
+
+//Exercício 6: Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";
+
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
- let maiorNumero = numbers[0];
+let resultado = 0;
 
- for (let index = 0; index < numbers.length; index += 1) {
-if (numbers[index] > maiorNumero) {
-    maiorNumero = numbers[index];
+
+for (let index = 0; index < numbers.length; index += 1) {
+    if (numbers[index] % 2 !== 0) {
+        resultado += 1;
+    }
 }
- };
 
- console.log(maiorNumero);
+if (resultado === 0) {
+    console.log('nenhum valor impar encontrado');
+} else {
+    console.log(resultado);
+}
