@@ -1,16 +1,16 @@
-// 1
+1
 
-// let info = {
-//     personagem: 'Margarida',
-//     origem: 'Pato Donald',
-//     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-//   };
-
-
-// console.log('Bem vinda,' + ' ' + info.personagem);
+let info = {
+    personagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+  };
 
 
+console.log('Bem vinda,' + ' ' + info.personagem);
 
+
+//2
 
 let info = {
     personagem: 'Margarida',
@@ -20,3 +20,8 @@ let info = {
 };
 
 console.log(info);
+
+for (info in info) {
+    console.log(info);
+}
+
