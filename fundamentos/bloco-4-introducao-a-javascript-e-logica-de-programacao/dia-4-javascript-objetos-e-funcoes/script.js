@@ -35,25 +35,48 @@
 // }
 
 
-let leitor = {
-  nome: 'Julia',
-  sobrenome: 'Pessoa',
-  idade: 21,
-  livrosFavoritos: [
-    {
-      titulo: 'O Pior Dia de Todos',
-      autor: 'Daniela Kopsch',
-      editora: 'Tordesilhas',
+// let leitor = {
+//   nome: 'Julia',
+//   sobrenome: 'Pessoa',
+//   idade: 21,
+//   livrosFavoritos: [
+//     {
+//       titulo: 'O Pior Dia de Todos',
+//       autor: 'Daniela Kopsch',
+//       editora: 'Tordesilhas',
       
-    },
-    {
-      titulo: 'Harry Potter e o Prisioneiro de Azkaban',
-      autor: 'JK Rowling',
-      editora: 'Rocco',
-    },
-  ],
+//     },
+//     {
+//       titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+//       autor: 'JK Rowling',
+//       editora: 'Rocco',
+//     },
+//   ],
+// };
+
+
+//   console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos');
+
+
+
+// PARTE 2 - FUNÇÃO
+
+//Exercício 1 - 1 - Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
+// Exemplo de palíndromo: arara .
+// verificaPalindrome('arara') ;
+// Retorno esperado: true
+// verificaPalindrome('desenvolvimento') ;
+// Retorno esperado: false
+
+
+function verificaPalindrome(string) {
+  let reverse = string.split('').reverse().join('');
+  if (reverse === string) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
-
-  console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos');
-
+console.log(verificaPalindrome('arara'));
+console.log(verificaPalindrome('desenvolvimento'));
