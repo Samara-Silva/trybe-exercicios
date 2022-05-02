@@ -101,14 +101,30 @@
 // Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
 // Valor esperado no retorno da função: 6 .
 
-function indiceDoMenor(numeros) {
-  let indiceMenor = 0;
-  for (let indice in numeros) {
-    if (numeros[indiceMenor] > numeros[indice]) {
-      indiceMenor = indice;
+// function indiceDoMenor(numeros) {
+//   let indiceMenor = 0;
+//   for (let indice in numeros) {
+//     if (numeros[indiceMenor] > numeros[indice]) {
+//       indiceMenor = indice;
+//     }
+//   }
+//   return indiceMenor;
+// };
+
+// console.log(indiceDoMenor([2, 4, 6, 7, 10, 0, -3]));
+
+// Exercício 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+// Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; .
+// Valor esperado no retorno da função: Fernanda .
+
+function maiorPalavra(palavras) {
+  let maiorPalavra = palavras[0];
+  for (let indice in palavras) {
+    if (maiorPalavra.length < palavras[indice].length) {
+      maiorPalavra = palavras[indice];
     }
   }
-  return indiceMenor;
+  return maiorPalavra;
 };
 
-console.log(indiceDoMenor([2, 4, 6, 7, 10, 0, -3]));
+console.log(maiorPalavra(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
