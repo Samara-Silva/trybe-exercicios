@@ -85,14 +85,30 @@
 // Array de teste: [2, 3, 6, 7, 10, 1]; .
 // Valor esperado no retorno da função: 4 .
 
-function indiceDoMaior(numeros) {
-  let indiceMaior = 0;
+// function indiceDoMaior(numeros) {
+//   let indiceMaior = 0;
+//   for (let indice in numeros) {
+//     if (numeros[indiceMaior] < numeros[indice]) {
+//       indiceMaior = indice;
+//     }
+//   }
+//   return indiceMaior;
+// }
+
+// console.log(indiceDoMaior([2, 3, 6, 7, 10, 1]))
+
+// Exercício 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+// Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
+// Valor esperado no retorno da função: 6 .
+
+function indiceDoMenor(numeros) {
+  let indiceMenor = 0;
   for (let indice in numeros) {
-    if (numeros[indiceMaior] < numeros[indice]) {
-      indiceMaior = indice;
+    if (numeros[indiceMenor] > numeros[indice]) {
+      indiceMenor = indice;
     }
   }
-  return indiceMaior;
-}
+  return indiceMenor;
+};
 
-console.log(indiceDoMaior([2, 3, 6, 7, 10, 1]))
+console.log(indiceDoMenor([2, 4, 6, 7, 10, 0, -3]));
