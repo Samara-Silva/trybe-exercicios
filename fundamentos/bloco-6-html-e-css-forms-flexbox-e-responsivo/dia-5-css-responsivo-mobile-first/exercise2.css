@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+    /* border: 20px solid black; */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    /* border: 1px solid black; */
+
+}
+
+body {
+    background-color: rgb(193, 110, 231);
+}
+
+header p {
+    font-size: 100px;
+    border: 1px solid black;
+    margin: 0;
+    text-align: center;
+
+}
+
+header ul {
+    border: 1px solid black;
+}
+
+.aside-main {
+    flex-basis: content;
+}
+
+.aside-one {
+    border: 1px solid black;
+    display: flex;
+
+}
+
+.aside-two {
+    display: flex;
+    border: 1px solid black;
+
+}
+
+.aside-one h2,
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    /* list-style: none; */
+}
+
+.aside-two h2,
+ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* list-style: none; */
+}
+
+.aside-one h2,
+ul,
+li {
+    margin-left: 30px;
+}
+
+.aside-two h2,
+ul,
+li {
+    margin-left: 30px;
+}
+
+article {
+    border: 1px solid black;
+}
+
+footer {
+    border: 1px solid black;
+}
+
+@media screen and (max-width:600px) {
+
+    body {
+        background-color: yellow;
+        font-size: 10px;
+    }
+
+    header p {
+        font-size: 50px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: aquamarine;
+    }
+
+    .container {
+        flex-wrap: nowrap;
+    }
+}
